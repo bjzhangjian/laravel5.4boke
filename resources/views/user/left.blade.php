@@ -1,0 +1,1 @@
+<a href="{{ url('/boke/bk_list') }}" target="mainFrame">博客列表</a>
