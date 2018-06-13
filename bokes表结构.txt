@@ -1,0 +1,12 @@
+CREATE TABLE `think_bokes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `addtime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `content` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `photo` varchar(255) CHARACTER SET latin1 DEFAULT NULL,
+  `price` float(10,2) DEFAULT NULL,
+  `create_user` char(32) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `index` (`id`) USING BTREE,
+  KEY `title` (`title`)
+) ENGINE=MyISAM AUTO_INCREMENT=40920747 DEFAULT CHARSET=utf8mb4;
